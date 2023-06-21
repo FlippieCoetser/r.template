@@ -1,2 +1,1 @@
-# r.template
-R Package Template
+# R Template
