@@ -31,7 +31,8 @@ git clone https://github.com/FlippieCoetser/r.template.git
 ### Folder Structure
 
 By design R packages leverage a specific folder structure. This structure is used by `devtools` to document, check and build packages.
-Here is an overview of the different files and folders that make up the package structure:
+Here is an overview of the different files and folders that make up the package structure.
+
 Files:
 
 - `DESCRIPTION`: Contains the package metadata. This file is used to define the package name, version, dependencies and other metadata.
