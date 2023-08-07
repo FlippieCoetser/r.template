@@ -52,7 +52,7 @@ Most of you time spent developing R packages will be spent in the R and Tests fo
 
 In a typical enterprise-level software, we often see a pyramid-like hierarchy. At the very top of this hierarchy, we have the application itself.
 
-![Enterprise Application Hierarchy](/Arhitecture.png)
+![Enterprise Application Hierarchy](/Architecture.png)
 
 - Beneath the application, we find `Packages`. These are frameworks or subsets of functionality that build upon and extend the core application. Most programming languages supports packages. By using packages, we can reuse functionality across multiple applications. For example in R, there is a popular package called `dplyr`. This package make is easy to manipulate data and is used in many applications. A section on packages will follow towards the end of this article.
 
