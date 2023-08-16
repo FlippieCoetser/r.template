@@ -2,13 +2,16 @@
 % Please edit documentation in R/Example.R
 \name{Example}
 \alias{Example}
-\title{Function Title'}
+\title{Component Title'}
 \value{
-a numeric value:
+a list value:
 \itemize{
+\item \code{example <- Example()}
+\item ``
+\item \code{x <- 10}
 \item \code{x |> Example()}
 }
 }
 \description{
-Function Description
+Component Description
 }
