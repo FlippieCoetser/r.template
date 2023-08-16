@@ -1,3 +1,4 @@
+# Existing
 describe('Given Example',{
   it('exist',{
     # Given
@@ -5,15 +6,35 @@ describe('Given Example',{
   })
 })
 
-describe("When x |> Example()",{
-  it("then x + is returned",{
+# Availability
+describe("When members <- Example()",{
+  it("Then members is a list",{
     # Given
-    x <- 1
-
-    # When
-    y <- x |> Example()   
+    members <- Example()
 
     # Then
-    y |> expect_equal(x + 1)
+    members |> is.list() |> expect_equal(TRUE)
+  })
+  it("Then members contains AddOne member",{
+    # Given
+    members <- Example()
+
+    # Then
+    members[['AddOne']] |> is.null() |> expect_equal(FALSE)
+  })
+})
+
+# Functionality
+describe("When input |> example[['AddOne']]()",{
+  it("Then output is input + 1",{
+    # Given
+    example <- Example()
+    input <- 10
+
+    # When 
+    output <- input |> example[['AddOne']]()
+
+    # Then
+    output |> expect_equal(11)
   })
 })

@@ -1,12 +1,17 @@
-#' Function Title'
+#' Component Title'
 #' 
 #' @description
-#' Function Description
+#' Component Description
 #'  
 #' @usage NULL
-#' @returns a numeric value: 
+#' @returns a list value: 
+#' * `example <- Example()`
+#' * ``
+#' * `x <- 10`
 #' * `x |> Example()`
 #' @export
-Example <- \(x) {
-  x + 1
+Example <- \() {
+  members <- list()
+  members[['AddOne']] <- \(value) value + 1
+  return(members)
 }
