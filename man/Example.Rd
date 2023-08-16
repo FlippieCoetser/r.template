@@ -7,7 +7,6 @@
 a list value:
 \itemize{
 \item \code{example <- Example()}
-\item ``
 \item \code{x <- 10}
 \item \code{x |> Example()}
 }

@@ -6,7 +6,6 @@
 #' @usage NULL
 #' @returns a list value: 
 #' * `example <- Example()`
-#' * ``
 #' * `x <- 10`
 #' * `x |> Example()`
 #' @export
