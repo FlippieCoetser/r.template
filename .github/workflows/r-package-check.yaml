@@ -1,13 +1,13 @@
 on:
   push:
-    branches: [main, master]
+    branches: [main, staging]
   pull_request:
-    branches: [main, master]
+    branches: [main, staging]
 
-name: R-CMD-check
+name: R-Package-Check
 
 jobs:
-  R-CMD-check:
+  R-Package-Check:
     runs-on: ${{ matrix.config.os }}
 
     name: ${{ matrix.config.os }} (${{ matrix.config.r }})
@@ -17,10 +17,13 @@ jobs:
       matrix:
         config:
           - { os: windows-latest, r: "release" }
+          - { os: macos-latest, r: "release" }
+          - { os: ubuntu-latest, r: "release" }
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       R_KEEP_PKG_SOURCE: yes
+      ENVIRONMENT: "GITHUB_ACTIONS"
 
     steps:
       - name: Checkout Code Base
