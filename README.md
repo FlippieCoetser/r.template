@@ -2,6 +2,12 @@
 
 This repository can be used a boilerplate when creating a new R package. It contains a basic package structure and a few useful files to get started.
 
+Unique feature included in this tempalte:
+
+1. A basic unit testing framework using `testthat`.
+2. A basic documentation framework using `roxygen2`.
+3. Github Actions for CI/CD.
+
 ## Getting Started
 
 ### Installation
